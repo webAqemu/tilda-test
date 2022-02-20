@@ -98,6 +98,7 @@ function insertData(data) {
     })
 }
 
+// переключаемся между картинками
 function imageTabs() {
     const tabs = document.querySelector(".card__tabs"); 
     const mainPhoto = document.querySelector(".card__photo img"); 
@@ -111,6 +112,7 @@ function imageTabs() {
     })
 }
 
+// добавление элемента в корзину
 function addItemToCart(imageUrl, name, id) {
     const cart = document.querySelector(".cart__list")
     const markup = 
