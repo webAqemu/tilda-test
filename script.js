@@ -126,6 +126,7 @@ function addItemToCart(imageUrl, name, id) {
     cart.insertAdjacentHTML("beforeend", markup)
 }
 
+// считаем скол-во элементов в корзине
 function cartCount () {
     const cart = document.querySelector(".cart")
     const cartItems = document.querySelectorAll(".cart__item").length
@@ -139,6 +140,7 @@ function cartCount () {
     }
 }
 
+// проверяем кол-во оставшихся товаров
 function checkQuantity() {
     const btns = document.querySelectorAll(".card__add")
     btns.forEach(btn => {
